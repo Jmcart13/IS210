@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href="../css/Scratch.css">
+</head>
+<body>
+    <div class = "common header">
+        <h1>Climbing</h1>
+    </div>
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Scratch.html">Scratch Page</a></li>
+            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="webapp.html">Webapp Page</a></li>
+        </ul> 
+    </nav>
+    <div class = "subhead">Needed Gear</div>
+            <ul class = "list">
+                <li>Rope</li>
+                <img src="../assets/img/rope.jpg" alt = "Tiger 1">
+                <li>Quickdraws</li>
+                <img src="../assets/img/quickdraw.jpeg" alt = "Tiger 1">
+                <li>Belay Device</li>
+                    <ol class>
+                        <li>ATC</li>
+                        <li>Gri Gri</li>
+                        <li>Neox</li>
+                    </ol>
+                <img src="../assets/img/GriGri.jpeg" alt = "Tiger 1">
+            </ul>  
+    <div class = "subhead">How to belay</div>
+    <div class = "video" id="video-container" style="cursor:pointer; max-width:560px;">
+        <img src="https://img.youtube.com/vi/wW5sB-vEqX4/hqdefault.jpg" alt="YouTube Thumbnail" style="width:100%;">
+      <script>
+        document.getElementById('video-container').addEventListener('click', function() {
+          this.innerHTML = `
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/wW5sB-vEqX4?autoplay=1&start=24&rel=0"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen>
+            </iframe>`;
+        });
+      </script>
+    </div>
+    <div class = "subhead">Random tableau</div>
+    <iframe
+    class="tableau"
+    src="https://public.tableau.com/app/profile/fennsk/viz/WorldCup2022MinutesContributions/WorldWorkloadsTreemaponly?_gl=1*1fbjbgs*_ga*ODczMzY0NDE2LjE3NDIyMjk1MDE.*_ga_8YLN0SNXVS*MTc0NDc1MDAyMi42LjEuMTc0NDc1MDA1Ni4wLjAuMA.."
+    style="display: block; margin: 0 auto; width: 50%; height: 500px;"
+    frameborder="0">
+  </iframe>         
+    <br><br><br><br><br><br><br><br>
+    <div class = "common footer">
+        Climb on!!
+    </div>
+</body>
+</html>
